@@ -1,5 +1,8 @@
 {
-  "name": "ui-library",
+  "name": "@shiminken/movies-ui-components",
+  "publishConfig": {
+    "@shiminken:registry": "https://npm.pkg.github.com/shiminken"
+  },
   "version": "1.0.0",
   "description": "reusable component ui",
   "author": "Ken",
