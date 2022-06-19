@@ -1,12 +1,13 @@
 {
-  "name": "@shiminken/movies-ui-components",
-  "publishConfig": {
-    "@shiminken:registry": "https://npm.pkg.github.com/shiminken"
-  },
-  "version": "1.0.0",
+  "name": "movies-ui-components",
+  "version": "1.0.1",
   "description": "reusable component ui",
-  "author": "Ken",
+  "author": "shiminken",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shiminken/movies-ui-components"
+  },
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",

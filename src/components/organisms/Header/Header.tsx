@@ -1,7 +1,6 @@
 import React, { useCallback, CSSProperties } from "react";
 import styled from "@emotion/styled";
 import colors from "../../../constants/colors";
-import TextInput from "../../atoms/TextInput";
 
 const HeaderWrapper = styled.div`
   background-color: ${colors.grey};
@@ -20,7 +19,11 @@ export interface HeaderProps {
   style?: CSSProperties;
 }
 
-const Header: React.FC<HeaderProps> = ({ rightHeader, leftHeader }) => {
+const Header: React.FC<HeaderProps> = ({
+  rightHeader,
+  leftHeader,
+  ...registerProps
+}) => {
   const renderLeftSide = useCallback(() => {
     return <div>{leftHeader}</div>;
   }, []);
@@ -30,7 +33,7 @@ const Header: React.FC<HeaderProps> = ({ rightHeader, leftHeader }) => {
   }, []);
 
   return (
-    <HeaderWrapper>
+    <HeaderWrapper {...registerProps}>
       {renderLeftSide()}
       {renderRightSide()}
     </HeaderWrapper>

@@ -12,8 +12,12 @@ const FooterWrapper = styled.div`
   align-items: center;
 `;
 
-const Footer = () => {
-  return <FooterWrapper>I am Footer, you can ignore me</FooterWrapper>;
+const Footer = ({ ...registerProps }) => {
+  return (
+    <FooterWrapper {...registerProps}>
+      I am Footer, you can ignore me
+    </FooterWrapper>
+  );
 };
 
 export default React.memo(Footer);
