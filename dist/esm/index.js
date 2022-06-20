@@ -283,7 +283,7 @@ function Qo(e,t){const o=zt(e,t);return"production"!==process.env.NODE_ENV?(...t
   height: 7vh;
   align-items: center;
   padding: 0 10px;
-`;var JC=t.memo((({rightHeader:e,leftHeader:o})=>{const r=d((()=>t.createElement("div",null,o)),[]),n=d((()=>t.createElement("div",null,e)),[]);return t.createElement(XC,null,r(),n())}));const ZC=zt.div`
+`;var JC=t.memo((e=>{var{rightHeader:o,leftHeader:r}=e,n=b(e,["rightHeader","leftHeader"]);const s=d((()=>t.createElement("div",null,r)),[]),a=d((()=>t.createElement("div",null,o)),[]);return t.createElement(XC,Object.assign({},n),s(),a())}));const ZC=zt.div`
   background-color: ${Ft};
   font-family: Arial, Helvetica, sans-serif;
   border: 1px solid ${_t};
@@ -291,5 +291,5 @@ function Qo(e,t){const o=zt(e,t);return"production"!==process.env.NODE_ENV?(...t
   display: flex;
   justify-content: center;
   align-items: center;
-`;var QC=t.memo((()=>t.createElement(ZC,null,"I am Footer, you can ignore me")));export{Ut as Button,QC as Footer,BC as FormInputGroup,JC as Header,YC as MovieCard,yC as Text,SC as TextInput};
+`;var QC=t.memo((e=>{var o=b(e,[]);return t.createElement(ZC,Object.assign({},o),"I am Footer, you can ignore me")}));export{Ut as Button,QC as Footer,BC as FormInputGroup,JC as Header,YC as MovieCard,yC as Text,SC as TextInput};
 //# sourceMappingURL=index.js.map
